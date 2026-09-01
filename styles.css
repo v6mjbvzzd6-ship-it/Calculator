@@ -3,52 +3,52 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: hsl(0, 0%, 95%);
     padding: 20px;
     box-sizing: border-box;
-
-    
 }
 
 #calculator{
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
-    border-radius: 15%;
-    width: 90%;
-    max-width: 500px;
-    overflow: hidden;
-
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
 }
+
 #display{
     width: 100%;
     padding: 20px;
-    font-size: 5rem;
-    text-align: left;
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    text-align: right;
     border: none;
     background-color: hsl(0, 0%, 15%);
     color: white;
-
+    box-sizing: border-box;
 }
 
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 25px;
+    padding: 15px;
 }
 
 button{
     width: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
-    border: none; 
+    border: none;
     background-color: hsl(0, 0%, 30%);
     color: white;
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(1.2rem, 4vw, 2rem);
     font-weight: bold;
     cursor: pointer;
 }
+
 button:hover{
     background-color: hsl(0, 0%, 45%);
 }
